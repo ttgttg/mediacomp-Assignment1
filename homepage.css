@@ -1,0 +1,119 @@
+body {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    font-family: "Chakra Petch", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:0;
+    
+    background-color: #fae4ad;
+    color: rgb(85, 85, 226);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color:none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    border-top: solid;
+    flex-direction: column;
+}
+
+
+header h1 {
+    margin-left: 0;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: italic;      
+    color: rgb(85, 85, 226);
+  }
+
+header p {
+    align-self: flex-end;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: italic;  
+    font-size:medium;
+}
+
+
+
+section.intro {
+    text-align: center;
+}
+
+.intro h3{
+    font-size: 4vw;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 900;
+    font-style: bold;  
+    color:rgb(85, 85, 226);
+}
+
+.intro p{
+    font-size:1.5vw;
+    font-weight:500;
+}
+section.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin:5%;
+}
+
+.gamecard {
+    border: none;
+    border-radius: 0.5em;
+    text-align: center;
+    margin:0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9efd5;
+    box-shadow: 5px 8px #d9b88f
+}
+.gamecard h3{
+    font-weight: 500;
+}
+section.games img {
+    height: 200px;
+    width:100%;
+    object-fit:cover;
+    margin:0%;
+    border: none;
+    border-radius: 0.5em 0.5em 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.games a {
+    text-decoration: none;
+    color: rgb(85, 85, 226);
+}
+
+footer h3 {
+    padding: 2%;
+    border: none;
+    background-color: rgb(173, 181, 232);
+}
+
+footer p{
+    font-family: "Redacted Script", cursive;
+  font-weight: 500;
+  font-size: 30px;
+  font-style: normal;
+  max-lines: 1;
+  text-overflow: ellipsis;
+  cursor:default;
+
+}
