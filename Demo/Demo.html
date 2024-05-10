@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='Demo css.css'/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Halli Galli</title>
+</head>
+<body>
+
+
+    <main>
+        <!--Section for instruction of demo game--> 
+        <section class="section1">
+            <h1> Demo Halli Galli </h1>
+            <p> 
+            Have you learned the rules of Halli Galli enough? If so, let's practice in a Demo game! 🎮​ </br>
+            On this page, you can experience a demo of the Halli Galli game. When you press the start button, the card will flip after 3 seconds, and the game will begin. </br>
+            When the cards satisfy the Halli Galli rules, simply press the bell in front of you. 🛎️​ </br>
+            If you press the button first after the cards are flipped, you will earn 1 point, while if your opponent presses the bell first, he will earn 1 point. </br>
+            Once the outcome is decided, it's the end of one round. So if you want to play again, simply press the start button again!​ 📟​</br>
+            <span id="text"> Shall we begin ​🚩​ </span>
+            </p>
+        </section>
+
+
+        <!--Section for playing demo games-->
+        <section class="section2"> 
+            <button id="startButton" onclick="doGame()" class='button btnPush btnBG' value="start">START</button>
+
+            <div class ='BCB'>
+                <img id="hands" src="./media/hands.png" alt="a Photo of human hands" width='200vw' height="250vh">
+                <img id="upperBell" src ="./media/bell.png" alt="Upper positioned bell"> 
+
+                <div class='Cards'>
+                    <img class='Back1' id="comCard" src="./card images/back.png" alt="Centered Backside of card" width="200vw" height="270vh">
+                    <img class='Back2' id="userCard" src="./card images/back.png" alt="Centered Backside of card" width="200vw" height="270vh">
+                </div>
+
+                <img id ="underBell" src="./media/bell.png" alt="Under positioned bell">
+            </div>
+        </section>
+
+
+
+        <!--Section for displaying score--> 
+        <section class="section3">
+            <h2> ✅​ Check your Score ✅​ </h2>
+            <table class="scoreTable">
+                <tr> <td class="td1"> You </td> <td class="td2"> Opponent </td></tr>
+                <tr> <td class="td1" id="userScore"> 0 </td> <td class="td2" id="comScore"> 0 </td> </tr>
+            </table>
+        </section>
+
+    </main>
+    <script src="demo.js"></script>
+
+</body>
+</html>
