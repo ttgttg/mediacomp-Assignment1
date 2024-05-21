@@ -1,0 +1,130 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F3D0D7;
+}
+
+header {
+    background-color: #F3D0D7;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    display: block;
+    color: black;
+    padding: 30px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    background-color: #FFEFEF;
+    font-weight: bold;
+    font-style: italic;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    flex-grow: 1;
+    background-color: #FFEFEF;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFEFEF;
+}
+
+.text-block {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content h1,
+.content li {
+    text-align: left;
+}
+
+.content img {
+    width: 35%;
+    height: 500px;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+
+.with-image img {
+    width: 400px;
+    height: 400px;
+    background-color: #FFEFEF;
+    margin: 40px;
+}
+
+.with-image .button {
+    flex: 1;
+    text-align: left;
+    margin: 40px;
+}
+
+#quiz .button {
+    text-align: right;
+}
+
+.button a {
+    display: inline-block;
+    padding: 30px 60px;
+    background-color: #F3D0D7;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 22px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button a:hover {
+    background-color: pink;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F3D0D7;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
