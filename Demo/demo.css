@@ -1,0 +1,137 @@
+
+.main {
+background-color: #F3D0D7;
+}
+
+.section1 {
+/* text-align: center; */
+background-color:#FFEFEF;
+}
+
+#text {
+font-weight: bold; 
+font-style: italic;
+}
+
+#buttons {
+  font-weight: bold; 
+  color: red;
+}
+
+
+.section2 {
+background-color: #F3D0D7;
+}
+
+.section3 {
+background-color: #FFEFEF;
+text-align: center;
+}
+
+#hands {
+margin-bottom: 0px;
+display: inline-block;
+}
+
+
+.Cards {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+
+.Back1 .Back2 {
+margin: 50;
+padding: 30;
+}
+
+#upperBell {
+width: 150px;
+height: 150px;
+margin-top: 0px;
+}
+
+#underBell {
+width: 150px;
+height: 150px;
+margin: 5px;
+}
+
+.BCB {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.scoreTable {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
+border-collapse: collapse;
+
+th, td {
+padding: 8px;
+border: 1px solid #FFFF;
+width: 20%;
+}
+}
+
+.td1 {background-color:#d8c893;}
+.td2 {background-color:#D1EBD8;}
+
+
+
+#startButton {
+width: 150px; 
+height: 50px;
+background: #a8dec9;
+  
+  position: absolute;
+  top: 110%;
+  left: 8%;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+#restartButton {
+  width: 150px; 
+  height: 50px;
+  background: #a8dec9;
+    
+    position: absolute;
+    top: 120%;
+    left: 8%;
+    margin: 10px 20px 10px 0;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    transition: all 0.2s ;
+  }
+
+.btnBG {
+  background: #a8dec9;
+}
+
+.btnBG.btnPush {
+  box-shadow: 0px 5px 0px 0px #54dba8;
+}
+
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.btnBG.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #54dba8;
+}
+
+
+
