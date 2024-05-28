@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <script src="quiz.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Halli Galli</a></li>
+          <li><a href="../instructions">Game Instructions</a></li>
+          <li><a href="../quiz/quiz.html">Quiz Yourself</a></li>
+          <li><a href="../demo/demo.html">Demo Game</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Quiz!</h1>
+    <h2>Test yourself with these questions...</h2>
+
+    <ol>
+      Q1. There is a 4 strawberry card on the deck. To ring the bell how many
+      strawberries should be on the card that will put down?
+    </ol>
+    <input type="number" id="answer0" placeholder="Type number only" />
+    <p id="response0"></p>
+    <ol>
+      Q2. What should you do if you ring the bell wrong?
+    </ol>
+    <select name="answer1" id="answer1">
+      <option value="" selected disabled>Select</option>
+      <option value="answer100">Give one card to the other players</option>
+      <option value="answer101">Put one card on the deck</option>
+      <option value="answer102">
+        The other player gets all the cards that are on the deck
+      </option>
+      <option value="answer103">Give all the cards to the other players</option>
+    </select>
+
+    <p id="response1"></p>
+    <ol>
+      Q3. If the other player put down 1 banana card and you put down 5 bananas
+      card, should you ring the bell?
+    </ol>
+    <input type="radio" id="yes1" name="question2" />
+    <label for="yes1">YES</label>
+    <input type="radio" id="no1" name="question2" />
+    <label for="no1">NO</label>
+    <p id="response2"></p>
+    <ol>
+      Q4. If two players ring the bell at the same time but player 1's hand is below
+      player 2, will player 1 receive the point?
+    </ol>
+    <input type="radio" id="yes2" name="question3" />
+    <label for="yes2">YES</label>
+    <input type="radio" id="no2" name="question3" />
+    <label for="no2">NO</label>
+    <p id="response3"></p>
+    <ol>
+      Q5. When you put down 3 strawberry card, which card should you put down next
+      to ring the bell?
+    </ol>
+    <input type="checkbox" id="answer400" name="answer400" value="strawberry" />
+    <label for="answer400">2 Strawberry</label><br />
+    <input type="checkbox" id="answer401" name="answer401" value="plum" />
+    <label for="answer401">1 Plum</label><br />
+    <input type="checkbox" id="answer402" name="answer402" value="lime" />
+    <label for="answer402">4 Lime</label><br />
+    <input type="checkbox" id="answer403" name="answer403" value="banana" />
+    <label for="answer403">5 Banana</label>
+    <p id="response4"></p>
+    <ol>
+      Q6. Which of the following fruits are not apart of the game?
+    </ol>
+    <input type="checkbox" id="answer500" name="answer500" value="Strawberry" />
+    <label for="answer400"> Strawberry</label><br />
+    <input type="checkbox" id="answer501" name="answer501" value="Grape" />
+    <label for="answer401"> Grape</label><br />
+    <input type="checkbox" id="answer502" name="answer502" value="Melon" />
+    <label for="answer402"> Melon</label><br />
+    <input type="checkbox" id="answer503" name="answer503" value="Banana" />
+    <label for="answer403"> Banana</label>
+    <p id="response5"></p>
+    </ol>
+    <ol>
+  Q7. How should you turn the cards around? Away or towards you?
+</ol>
+<input type="checkbox" id="answer600" name="answer600" value="Away" />
+<label for="answer600">Away</label><br />
+<input type="checkbox" id="answer601" name="answer601" value="Towards" />
+<label for="answer601">Towards</label>
+<p id="response6"></p>
+
+<ol>
+  Q8. How many sets of cards are in the deck?
+</ol>
+<input type="checkbox" id="answer700" name="answer700" value="124" />
+<label for="answer700">124</label><br />
+<input type="checkbox" id="answer701" name="answer701" value="56" />
+<label for="answer701">56</label><br />
+<input type="checkbox" id="answer702" name="answer702" value="52" />
+<label for="answer702">52</label><br />
+<input type="checkbox" id="answer703" name="answer703" value="48" />
+<label for="answer703">48</label>
+<p id="response7"></p>
+
+
+<ol>
+  Q9. How is the ultimate winner decided?
+</ol>
+<select name="answer8" id="answer8">
+  <option value="" selected disabled>Select</option>
+  <option value="answer800">When the player runs out of cards</option>
+  <option value="answer801">When the player slams the desk and rage quits</option>
+  <option value="answer802">When the player have the largest amount of cards in a deck at the end of the round</option>
+  <option value="answer803">When the player rings the bell when 5 of the same fruits are seen</option>
+</select>
+<p id="response8"></p>
+
+<button onclick="quiz()">Check answers</button>
+  </body>
+</html>
