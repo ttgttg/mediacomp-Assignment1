@@ -301,6 +301,8 @@ table {
   }
 }
 
+
+
 div.graphic-container{
   margin:0;
   padding:0;
@@ -323,6 +325,6 @@ div.graphic-container-inner img{
   overflow:hidden;
   top:0;
   left:0;
-  object-fit: contain;
+  object-fit: cover;
 }
 
