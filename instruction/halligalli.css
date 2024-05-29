@@ -1,0 +1,137 @@
+*{
+  margin:0;
+  padding:0.5em;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+.heading {
+  font-size: 3vw;
+  color: #cb8017;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.outerborder{
+  background-color: #f8eaa7;
+}
+body {
+  background-color: #fda6a6;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+header,
+footer {
+  background-color: #ff8383;
+  text-align: center;
+}
+
+#gamecontainer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3db83;
+}
+
+.gamecontainerimg{
+  margin:0;
+  padding:0;
+}
+.gamecontainerimg img{
+  height:20vw;
+  object-fit: contain;
+}
+
+#logo {
+  margin: 2em 2em 2em 2em;
+  width: 10%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin:1em;
+}
+
+td {
+  border: 3px;
+  padding: 3px;
+  border-style: groove;
+  text-align: center;
+}
+
+table {
+  background-color: #95bbf9;
+  margin-top: 8em;
+  margin-left: 10em;
+}
+
+#description {
+  margin-right: 7em;
+  margin-top: 5em;
+}
+
+
+
+#title2 {
+  background-color: #a190f5;
+  text-align: center;
+}
+#title2 > h2 {
+  color:#4422ef;
+}
+#preparation {
+  margin-left: 7em;
+  margin-right: 7em;
+  padding:1em;
+  background-color: #c7c6ff;
+}
+#title3 {
+  background-color: #f6d886;
+  text-align: center;
+  color: #f2dc6d;
+}
+#game {
+  margin-left: 7em;
+  margin-right: 7em;
+  padding:1em;
+  background-color: #ffbb5d;
+}
+
+
+.cards{
+  position:relative;
+  margin-top:15em;
+  margin-bottom:25em;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.cards div{
+  position:absolute;
+  width:200px;
+  height:320px;
+  background-color: #ffa96c;
+  border-radius:8px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:rgba(0, 0, 0, 1);
+  border:10px solid rgba(0, 0, 0, .1);
+  transition:.5s;
+  transform-origin:50% 100%;
+
+}
+
+.cards:hover .card{
+  transform:rotate(calc(var(--i)*5deg))
+            translate(calc(var(--i)*120px));
+}
