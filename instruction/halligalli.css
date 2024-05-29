@@ -54,7 +54,7 @@ body {
 
 .homepage-content {
   flex-grow: 1;
-  background-color: #FFEFEF;
+  background-color: #ffefef21;
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFEFEF;
 }
 
 .text-block {
@@ -227,7 +226,7 @@ table {
   margin-left: 7em;
   margin-right: 7em;
   padding:1em;
-  background-color: #ffb84d;
+  background-color: #F2994A;
 }
 
 
