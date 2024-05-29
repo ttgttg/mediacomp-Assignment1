@@ -1,12 +1,9 @@
-*{
+html, body {
+  width:100vw;
+  height:100vh;
   margin:0;
   padding:0;
   box-sizing:border-box;
-}
-
-body {
-  width:100%;
-  height:100%;
   background-color: #181716;
   font-family:'Inter',sans-serif;
   color:#f2dc6d;
@@ -46,18 +43,16 @@ body {
   cursor:pointer;
 }
 
-.homepage-main {
+main.homepage-main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   width: 100%;
-  box-sizing: border-box;
 }
 
-.homepage-content {
-  flex-grow: 1;
+section.homepage-content {
+  width:100%;
+  margin-top:-30em;
   background-color: #ffefef21;
-  padding: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +64,7 @@ body {
   width: 100%;
   max-width: 1200px;
   height: 400px;
+  margin:0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,10 +128,10 @@ body {
 
 #footer-home {
   text-align: center;
-  padding: 20px;
+  padding:20px 0;
   background-color: #F3D0D7;
   color: black;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -278,9 +274,12 @@ table {
 
 .marquee{
   width:100%;
+  max-width: 100%;
   margin: 0 0;
+  padding:0;
   white-space:nowrap;
-  overflow:hidden;
+  overflow:clip;
+  overflow-clip-margin: border-box;
 }
 
 .marquee span{
@@ -290,7 +289,6 @@ table {
   font-size:20rem;
   text-transform:uppercase;
   display:inline-block;
-  padding-left:-10%;
   animation:marquee-animation 85s linear infinite;
 }
 
@@ -307,23 +305,24 @@ div.graphic-container{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  width:100%;
   height:100vw;
+  overflow:hidden;
 }
 
 div.graphic-container-inner{
   position:relative;
   width:100%;
   height:100%;
-  display:flex;
-  justify-content: center;
-  align-items:center;
   overflow: hidden;
 }
 
 div.graphic-container-inner img{
   position:absolute;
   width:100%;
+  overflow:hidden;
   top:0;
   left:0;
   object-fit: contain;
 }
+
