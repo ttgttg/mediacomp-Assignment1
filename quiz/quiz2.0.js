@@ -106,7 +106,7 @@ if (answer8 == "answer802") {
 
   switch (score) {
     case 0:
-      alert("You didn't get any score this time. You'd better to review the instruction page!");
+      alert("You didn't get any score this time. You probably should review the instruction page!");
       break;
     case 1:
       alert("Your score is 1 out of 8. It's quite a low score:( You can do better next time!");
