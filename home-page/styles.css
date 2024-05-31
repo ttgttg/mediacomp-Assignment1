@@ -49,7 +49,7 @@ header nav ul li a:hover {
   font-weight: bold;
   font-style: italic;
 }
-main {
+.homepage-main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;

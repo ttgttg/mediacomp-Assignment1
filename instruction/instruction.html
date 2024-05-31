@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halligalli</title>
+    <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="../halligalli.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,93 +37,93 @@
     <main>
       <div class="marquee">
         <span>
-          Halli Galli: Instruction. Halli Galli: Instruction. Halli Galli: Instruction. Halli Galli: Instruction. 
+          Halli Galli: Instruction. Halli Galli: Instruction. Halli Galli:
+          Instruction. Halli Galli: Instruction.
         </span>
       </div>
-      <div class="title">
-        <h1 class="heading">
+
+      <div class="hero-message">
+        <h1 class="heading" class="hero-message-text">
           Hey there! Wanna learn how to play Halli Galli?<br />Flip cards to
           reveal fruits. Spot five of a kind? Ring the bell first to win!
         </h1>
       </div>
+
       <div class="cardsouter">
         <div class="cards">
-          <div class="card" style="--i: -4">
-            <img src="../img/0.png" />
-          </div>
-          <div class="card" style="--i: -3">2</div>
-          <div class="card" style="--i: -2">3</div>
-          <div class="card" style="--i: -1">4</div>
-          <div class="card" style="--i: -0">5</div>
-          <div class="card" style="--i: 1">6</div>
-          <div class="card" style="--i: 2">7</div>
-          <div class="card" style="--i: 3">8</div>
-          <div class="card" style="--i: 4">9</div>
+          <div class="card" style="--i: -4"><img src="../img/0.png" /></div>
+          <div class="card" style="--i: -3"><img src="../img/7.png" /></div>
+          <div class="card" style="--i: -2"><img src="../img/11.png" /></div>
+          <div class="card" style="--i: -1"><img src="../img/16.png" /></div>
+          <div class="card" style="--i: -0"><img src="../img/3.png" /></div>
+          <div class="card" style="--i: 1"><img src="../img/12.png" /></div>
+          <div class="card" style="--i: 2"><img src="../img/9.png" /></div>
+          <div class="card" style="--i: 3"><img src="../img/4.png" /></div>
+          <div class="card" style="--i: 4"><img src="../img/17.png" /></div>
         </div>
       </div>
-      <section id="gamecontainer">
-        <div class="gamecontainerimg">
-          <img src="Halligalli.png" alt="an image of a Halli Galli" />
+      <div class="gamecontents">
+        <div class="gamecontent__heading">
+          <h2 class="heading">So...What will you get in a Halli Galli box?</h2>
         </div>
-        <div class="gamecontainertext">
-          <h3 class="heading">What You Will Get in a Halli Galli box</h3>
+        <div class="gamecontent__description">
+          <div class="gamecontent__img">
+            <img
+              src="../img/halligalli-content.png"
+              alt="an image of a Halli Galli"
+            />
+          </div>
           <ul>
             <li>
-              56 playing cards showing 4 kinds of fruit in groups of 1 to 5
+              56 playing cards, showing 4 kinds of fruit in groups of 1 to 5
             </li>
-            <li>A ringing bell</li>
-            <li>Game instruction</li>
+            <li>A ringing bell that goes 'ding'</li>
+            <li>
+              Game instruction manual - You won't need it if you browse this
+              site to learn instead!
+            </li>
           </ul>
         </div>
-      </section>
-      <div class="instruction">
-        <div class="briefintro">
-          <h3>
-            The deck is distributed evenly between the players. All players hold
-            their deck face down and take turns dealing one card face up in
-            front of them. As each player reveals her next card, the instant you
-            see a total of five of one kind of fruit on the table, hit the bell.
-            If you're correct, you pick up all the played cards and put them
-            into your deck; if you're wrong, you pay the other players one card
-            each. When you run out of cards, you're out. When two players are
-            left, they play until the bell is struck once more, then the game
-            ends and the taller deck wins.
-          </h3>
-        </div>
       </div>
-      <aside>
-        <table>
-          <tr>
-            <th>Players</th>
-            <th>Age</th>
-            <th>Duration</th>
-          </tr>
-          <tr>
-            <td>2-6</td>
-            <td>6+</td>
-            <td>15 minutes</td>
-          </tr>
-        </table>
-      </aside>
+
+      <div class="briefintro">
+        <h3>
+          The deck is distributed evenly between the players. All players hold
+          their deck face down and take turns dealing one card face up in front
+          of them. As each player reveals their next card, the instant you see a
+          total of five of one kind of fruit on the table, hit the bell. If
+          you're correct, you pick up all the played cards and put them into
+          your deck; if you're wrong, you pay the other players one card each.
+          When you run out of cards, you're out.
+        </h3>
+        <h1>What if there are only two players left?</h1>
+        <p>
+          When two players are left, they play until the bell is struck once
+          more, then the game ends and the taller deck wins!
+        </p>
+      </div>
     </main>
 
-    <div id="preparation">
-      <article id="title2">
+    <div class="preparation">
+      <div class="preparation__title">
         <h2 class="heading">Preparation</h2>
-      </article>
-      <p>
-        Place the bell in the middle of the table, on a cloth or a piece of felt
-        to protect your table. <br />Select a dealer. He shuffles the cards and
-        deals them out to the players, one at a time until all of the cards have
-        been used up. <br />Each player places their deck face down on the table
-        in front of them, without looking at their cards.
-      </p>
+      </div>
+      <div class="preparation__content">
+        <p class="bodytext">
+          Place the bell in the middle of the table, on a cloth or a piece of
+          felt to protect your table. <br />Select a dealer. He shuffles the
+          cards and deals them out to the players, one at a time until all of
+          the cards have been used up. <br />Each player places their deck face
+          down on the table in front of them, without looking at their cards.
+        </p>
+      </div>
     </div>
-    <div id="game">
-      <article id="title3">
+
+    <div class="gameplay">
+      <div class="gameplay__title">
         <h2 class="heading">The Game</h2>
-      </article>
-      <section id="gameplay">
+      </div>
+      <section id="gameplay__content">
         <ol>
           <li>The player to the left of the dealer starts the game.</li>
           <li>
