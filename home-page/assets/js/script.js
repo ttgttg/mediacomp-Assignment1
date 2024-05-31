@@ -11,11 +11,11 @@ if (preloader) {
 window.addEventListener("scroll", function () {
   const header = document.getElementById("header");
   if (window.scrollY > 50) {
-    setTimeout(() => {  
-      header.classList.add("sticky"); 
+    setTimeout(() => {
+      header.classList.add("sticky");
     }, 200);
   } else {
-    setTimeout(() => {  
+    setTimeout(() => {
       header.classList.remove("sticky");
     }, 200);
   }
@@ -24,24 +24,24 @@ window.addEventListener("scroll", function () {
 function handleAlert() {
   const targetElements = document.querySelectorAll(".slide-up");
   targetElements.forEach((element) => {
-    if (!element.classList.contains("alerted") && isInViewport(element)) { 
-      setTimeout(() => { 
+    if (!element.classList.contains("alerted") && isInViewport(element)) {
+      setTimeout(() => {
         element.classList.add("alerted");
       }, 200);
     }
-  }); 
+  });
   const targetElementsLeft = document.querySelectorAll(".slide-left");
   targetElementsLeft.forEach((element) => {
-    if (!element.classList.contains("alerted") && isInViewport(element)) { 
-      setTimeout(() => { 
+    if (!element.classList.contains("alerted") && isInViewport(element)) {
+      setTimeout(() => {
         element.classList.add("alerted");
       }, 200);
     }
   });
   const targetElementsRight = document.querySelectorAll(".slide-right");
   targetElementsRight.forEach((element) => {
-    if (!element.classList.contains("alerted") && isInViewport(element)) { 
-      setTimeout(() => { 
+    if (!element.classList.contains("alerted") && isInViewport(element)) {
+      setTimeout(() => {
         element.classList.add("alerted");
       }, 200);
     }
