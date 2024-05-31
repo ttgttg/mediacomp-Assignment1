@@ -106,31 +106,44 @@ if (answer8 == "answer802") {
 
   switch (score) {
     case 0:
-      alert("You didn't get any score this time. You probably should review the instruction page!");
+      alert(
+        "You didn't get any score this time. You probably should review the instruction page!"
+      );
       break;
     case 1:
-      alert("Your score is 1 out of 8. It's quite a low score:( You can do better next time!");
+      alert(
+        "Your score is 1 out of 9. It's quite a low score:( You can do better next time!"
+      );
       break;
     case 2:
-      alert("Your score is 2 out of 8. With a bit more effort, you could achieve a better result!");
+      alert(
+        "Your score is 2 out of 9. With a bit more effort, you could achieve a better result!"
+      );
       break;
     case 3:
-      alert("Your score is 3 out of 8. You're getting there! Keep trying!");
+      alert("Your score is 3 out of 9. You're getting there! Keep trying!");
       break;
     case 4:
-      alert("Your score is 4 out of 8. Half way there! You got this!");
+      alert("Your score is 4 out of 9. Almost half way there! You got this!");
       break;
     case 5:
-      alert("Your score is 5 out of 8. Good job! Just three more to perfection!");
+      alert(
+        "Your score is 5 out of 9. Good job! Just three more to perfection!"
+      );
       break;
     case 6:
-      alert("Your score is 6 out of 8. Almost there! Keep it going!");
+      alert("Your score is 6 out of 9. Almost there! Keep it going!");
       break;
     case 7:
-      alert("Your score is 7 out of 8. Well done! You've scored quite well:) Keep up the good work!");
+      alert(
+        "Your score is 7 out of 9. Well done! You've scored quite well:) Keep up the good work!"
+      );
       break;
     case 8:
-      alert("Your score is 8 out of 8. Daaaaaaang!!! Nailed it!!!");
+      alert("Your score is 8 out of 9. You slayed!!!");
+      break;
+    case 9:
+      alert("Your score is 9 out of 9. Daaaaaaang!!! Nailed it!!!");
       break;
   }
 }
