@@ -112,8 +112,9 @@ div.graphic-container-inner img {
 }
 .hero-message h1 {
   text-align: center;
-  padding: 2em 5em;
+  padding: 1em 6em;
 }
+
 
 /*INSTRUCTION__card animation*/
 .cards {
@@ -277,8 +278,13 @@ div.graphic-container-inner img {
   font-size: 2.8rem;
   font-style: normal;
   text-align: center;
-  line-height: 3rem;
+  line-height: 3.2rem;
 }
+
+.heading:hover {
+  color:#f6d886;
+}
+
 
 .heading2 {
   color: #fab855;
@@ -305,7 +311,8 @@ footer {
 .quiz-content{
   width:80%;
   margin:0 10%;
-  background-color: #3d3b39;
+  background-image: linear-gradient(rgb(46, 45, 43), rgba(0, 0, 0, 0));
+  border-radius: 8px;
   padding:5% 0;
 }
 .quiz-heading{
