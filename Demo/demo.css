@@ -1,117 +1,167 @@
+/*DEMO__SECTION1*/
 #buttons {
-  font-weight: bold; 
-  color: red;
+  font-weight: bold;
+  color: rgb(72, 11, 226);
+  background-color: rgb(190, 172, 241);
+  padding: 0.5px 4px;
+  border-radius: 5px;
+}
+.section1{
+  background-image: linear-gradient(#181716,#181716,rgb(40, 38, 42));
+}
+.section1 .heading2 {
+  padding-bottom: 1em;
+}
+.section1 .heading {
+  font-style: italic;
+}
+.demoinstruction {
+  background-color: rgb(59, 45, 84);
+  padding: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+#section1bodytext {
+  line-height: 1.8em;
+  color: #dac6fe;
+}
+#section1heading {
+  color: #c9abff;
 }
 
 
-.section2 {
-background-color: #F3D0D7;
+
+
+/*DEMO___SECTION2*/
+.section2__buttons{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
 }
-
-.section3 {
-background-color: #FFEFEF;
-text-align: center;
+.section2__buttons button{
+  font-family: 'Gabarito', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color:rgb(72, 11, 226);
 }
-
-
-.Cards {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 15px;
-}
-
-.Back1 .Back2 {
-margin: 50;
-padding: 30;
-}
-
-#upperBell {
-width: 150px;
-height: 150px;
-margin-top: 0px;
-}
-
-#underBell {
-width: 150px;
-height: 150px;
-margin: 5px;
-}
-
-.BCB {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.scoreTable {
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-width: 60%;
-border-collapse: collapse;
-
-th, td {
-padding: 8px;
-border: 1px solid #FFFF;
-width: 20%;
-}
-}
-
-.td1 {background-color:#d8c893;}
-.td2 {background-color:#D1EBD8;}
-
-
-
 #startButton {
-width: 150px; 
-height: 50px;
-background: #a8dec9;
-  
-  position: absolute;
-  top: 110%;
-  left: 8%;
-  margin: 10px 20px 10px 0;
+  width: 200px;
+  height: 50px;
+  margin-right:5%;
+  background: rgb(190, 172, 241);
+  border:none;
+  border-radius: 5px;
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#restartButton {
+  width: 200px;
+  height: 50px;
+  margin-left:5%;
+  border:none;
+  background: rgb(190, 172, 241);
+  position: relative;
   font-weight: 600;
   text-align: center;
   line-height: 50px;
   border-radius: 5px;
-  transition: all 0.2s ;
+  transition: all 0.2s;
+  cursor: pointer;
 }
-
-#restartButton {
-  width: 150px; 
-  height: 50px;
-  background: #a8dec9;
-    
-    position: absolute;
-    top: 120%;
-    left: 8%;
-    margin: 10px 20px 10px 0;
-    font-weight: 600;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 5px;
-    transition: all 0.2s ;
-  }
-
+.computerimg{
+  object-fit: contain;
+  padding-top:2em;
+  padding-bottom: 2em;
+}
 .btnBG {
-  background: #a8dec9;
+  background: #9276b9;
 }
-
 .btnBG.btnPush {
-  box-shadow: 0px 5px 0px 0px #54dba8;
+  box-shadow: 0px 5px 0px 0px rgb(102, 71, 181);
 }
-
 .btnPush:hover {
-  margin-top: 15px;
-  margin-bottom: 5px;
+  color:#975de7
 }
-
 .btnBG.btnPush:hover {
-  box-shadow: 0px 0px 0px 0px #54dba8;
+  box-shadow: 0px 0px 0px 0px rgb(72, 11, 226);
+}
+.section2 {
+  background-image: linear-gradient(rgb(40, 38, 42),#5a4d42)
+}
+#underBell{
+  cursor: pointer;
 }
 
 
 
+
+
+
+
+/*DEMO___SECTION3*/
+.section3 {
+  text-align: center;
+  background-color:#5a4d42;
+}
+.score{
+  background-color:#826b58;
+  width:80%;
+  border-radius: 10px;
+  padding:4%;
+}
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Back1 .Back2 {
+  margin: 50;
+  padding: 30;
+}
+#upperBell {
+  width: 150px;
+  height: 150px;
+  margin-top: 0px;
+}
+#underBell {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+.BCB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scoreTable {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-collapse: collapse;
+  color: #feedc6;
+
+  th,
+  td {
+    padding: 12px;
+    width: 20%;
+  }
+}
+.score .heading{
+  padding-bottom: 0.8em;
+  color: #efc58e;
+}
+.td1 {
+  background-color: #a46f4a;
+}
+.td2 {
+  background-color: #634f40;
+}

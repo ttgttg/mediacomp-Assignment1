@@ -62,7 +62,7 @@ main {
     font-family: 'Gabarito';
     text-align: center;
     padding: 20px 0;
-    background-color: #5D5FEF;
+    background-color: #6b6de1;
     color: rgb(255, 255, 255);
     position: relative;
     bottom: 0;
@@ -73,7 +73,6 @@ main {
 /*GENERAL__FONTS*/
   .heading {
     color: #f2994a;
-    font-family: "Gabarito", serif;
     font-weight: 800;
     font-size: 3rem;
     font-style: normal;
@@ -84,6 +83,11 @@ main {
     color:#f6d886;
   }
 
+  .bodytext {
+  font-size: 1.2rem;
+  line-height: auto;
+  color: #f6d886;
+  }
 
   .heading2 {
     color: #fab855;
@@ -457,10 +461,7 @@ header.sticky {
   color: #a7a6ff;
   text-align: center;
 }
-.bodytext {
-  font-size: 1.2rem;
-  color: #f6d886;
-}
+
 
 
 
@@ -468,8 +469,8 @@ header.sticky {
 
 /*QUIZ_PAGE*/
   .quiz-content{
-    width:80%;
-    margin:0 10%;
+    width:70%;
+    margin:0 auto;
     background-image: linear-gradient(rgb(46, 45, 43), rgba(0, 0, 0, 0));
     border-radius: 8px;
     padding:5% 0;
@@ -554,4 +555,180 @@ header.sticky {
     cursor: pointer;
     background-color: #5226ef;
     color:#fff;
+}
+
+
+
+
+
+
+
+
+
+/*DEMO__SECTION1*/
+#buttons {
+  font-weight: bold;
+  color: rgb(72, 11, 226);
+  background-color: rgb(190, 172, 241);
+  padding: 0.5px 4px;
+  border-radius: 5px;
+}
+.section1{
+  background-image: linear-gradient(#181716,#181716,rgb(40, 38, 42));
+}
+.section1 .heading2 {
+  padding-bottom: 1em;
+}
+.section1 .heading {
+  font-style: italic;
+}
+.demoinstruction {
+  background-color: rgb(59, 45, 84);
+  padding: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+#section1bodytext {
+  line-height: 1.8em;
+  color: #dac6fe;
+}
+#section1heading {
+  color: #c9abff;
+}
+
+
+
+
+/*DEMO___SECTION2*/
+.section2__buttons{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+.section2__buttons button{
+  font-family: 'Gabarito', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color:rgb(72, 11, 226);
+}
+#startButton {
+  width: 200px;
+  height: 50px;
+  margin-right:5%;
+  background: rgb(190, 172, 241);
+  border:none;
+  border-radius: 5px;
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#restartButton {
+  width: 200px;
+  height: 50px;
+  margin-left:5%;
+  border:none;
+  background: rgb(190, 172, 241);
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.computerimg{
+  object-fit: contain;
+  padding-top:2em;
+  padding-bottom: 2em;
+}
+.btnBG {
+  background: #9276b9;
+}
+.btnBG.btnPush {
+  box-shadow: 0px 5px 0px 0px rgb(102, 71, 181);
+}
+.btnPush:hover {
+  color:#975de7
+}
+.btnBG.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px rgb(72, 11, 226);
+}
+.section2 {
+  background-image: linear-gradient(rgb(40, 38, 42),#5a4d42)
+}
+#underBell{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/*DEMO___SECTION3*/
+.section3 {
+  text-align: center;
+  background-color:#5a4d42;
+}
+.score{
+  background-color:#826b58;
+  width:80%;
+  border-radius: 10px;
+  padding:4%;
+}
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Back1 .Back2 {
+  margin: 50;
+  padding: 30;
+}
+#upperBell {
+  width: 150px;
+  height: 150px;
+  margin-top: 0px;
+}
+#underBell {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+.BCB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scoreTable {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-collapse: collapse;
+  color: #feedc6;
+
+  th,
+  td {
+    padding: 12px;
+    width: 20%;
+  }
+}
+.score .heading{
+  padding-bottom: 0.8em;
+  color: #efc58e;
+}
+.td1 {
+  background-color: #a46f4a;
+}
+.td2 {
+  background-color: #634f40;
 }

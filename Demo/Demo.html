@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="demo.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halli Galli Demo Game</title>
@@ -38,58 +37,62 @@
     <main>
       <!--Section for instruction of demo game-->
       <section class="section1">
-        <p class="heading2">
+        <h1 class="heading2">
           Have you mastered the rules of Halli Galli yet? <br />If yes, let's
           practice with a fun Demo Game! <br />On this page, you can experience
           a shortened, 1v1 version of the Halli Galli game.
-        </p>
-        <h3 class="heading">Let's begin!​</h3>
+        </h1>
 
-        <h3>Demo Game Instructions</h3>
-        <p>
-          1. To enjoy the game, please make sure your sound is on! 2. When you
-          press the <span id="buttons">Start</span> button, the card will flip
-          after 3 seconds, and the game will begin. 3. When the cards satisfy
-          the Halli Galli rules, simply press the 🛎️<span id="buttons"
-            >bell image</span
-          >
-          in front of you. 4. When you have to ring the bell, you will earn 1
-          point if you press the button first. Otherwise, your opponent will
-          earn 1 point if he presses the bell first. 5. When you don't have to
-          ring the bell, your opponent will earn 1 point if you press the bell.
-          6. Once the outcome is decided, the accumulated score up to that round
-          is shown in the table below. 7. If you want to play again, simply
-          press the <span id="buttons">Start</span> button again!📟 8. If you
-          want to reset the total round score, press the
-          <span id="buttons">Restart</span> button(click it once or twice).
-        </p>
+        <div class="demoinstruction">
+          <h3 class="heading2" id="section1heading">Demo Game Instruction</h3>
+          <p class="bodytext" id="section1bodytext">
+            1. To enjoy the game, please make sure your sound is on!<br />
+            2. When you press the <span id="buttons">START</span> button, the
+            cards will flip after THREE seconds, and the game will begin. <br />
+            3. When the cards satisfy the Halli Galli rules, simply press the
+            <span id="buttons">🛎️ bell image</span> below the cards. <br />4. If
+            you ring the bell correctly before the computer opponent, you will
+            win the round and score 1 point. Otherwise, your opponent will win
+            the round if they press the bell first. <br />
+            5. If you accidentally ring the bell when there isn't five of a
+            fruit, your opponent will also win the round. <br />6. If you want
+            to play again, simply press the
+            <span id="buttons">START</span> button again!<br />
+            7. Your score over the rounds is displayed on the scoreboard below.
+            If you want to reset the scoreboard, press the
+            <span id="buttons"> RESTART</span> button(click it once or twice).
+          </p>
+        </div>
+        <h3 class="heading">Let's begin!​</h3>
       </section>
 
       <!--Section for playing demo games-->
       <section class="section2">
-        <button
-          id="startButton"
-          onclick="doGame()"
-          class="button btnPush btnBG"
-          value="start"
-        >
-          START
-        </button>
-        <button
-          id="restartButton"
-          onclick="restart()"
-          class="button btnPush btnBG"
-          value="restart"
-        >
-          Restart
-        </button>
-
+        <div class="section2__buttons">
+          <button
+            id="startButton"
+            onclick="doGame()"
+            class="button btnPush btnBG"
+            value="start"
+          >
+            START
+          </button>
+          <button
+            id="restartButton"
+            onclick="restart()"
+            class="button btnPush btnBG"
+            value="restart"
+          >
+            RESTART
+          </button>
+        </div>
         <div class="BCB">
           <!-- <img id="hands" src="./media/hands.png" alt="a Photo of human hands" width='200vw' height="250vh"> -->
           <img
+            class="computerimg"
             id="upperBell"
-            src="./media/bell.png"
-            alt="Upper positioned bell"
+            src="./media/computer.png"
+            alt="computer"
           />
 
           <div id="message"></div>
@@ -123,17 +126,19 @@
 
       <!--Section for displaying score-->
       <section class="section3">
-        <h2>✅​ Check your Score ✅​</h2>
-        <table class="scoreTable">
-          <tr>
-            <td class="td1">You</td>
-            <td class="td2">Opponent</td>
-          </tr>
-          <tr>
-            <td class="td1" id="userScore">0</td>
-            <td class="td2" id="comScore">0</td>
-          </tr>
-        </table>
+        <div class="score">
+          <h2 class="heading">Scoreboard​</h2>
+          <table class="scoreTable">
+            <tr>
+              <td class="td1">You</td>
+              <td class="td2">Opponent</td>
+            </tr>
+            <tr>
+              <td class="td1" id="userScore">0</td>
+              <td class="td2" id="comScore">0</td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
     <footer class="footer">
