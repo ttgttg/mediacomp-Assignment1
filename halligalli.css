@@ -41,7 +41,7 @@ main {
     align-items: center;
     color: #181716;
     padding: 0.5em 0.5em;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-decoration: none;
     font-weight: bold;
   }
@@ -439,53 +439,119 @@ header.sticky {
 
 /*INSTRUCTION__BRIEF INTRO*/
 .briefintro {
-  width: 80%;
-  margin: 0 auto 5em;
+  width: 80vw;
+  margin: 0 10vw 5vw;
 }
 .briefintro > h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .briefintro__heading {
   text-align: left;
   padding:0.5em 0;
 }
 .briefintro .briefintro__text{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1em;
 }
 .briefintro{
   display:flex;
   flex-direction: row;
 }
-.briefintro__img{
-  flex:1;
+.briefintro__img img{
   object-fit: contain;
-  width:36%;
-  padding-left: 2em;
-  padding-right: 1em;
-}
-.briefintroinner{
-  padding-right:0em;
+  overflow: hidden;
+  margin-top: 5em;
+  width:32em;
+  margin-left:15%;
 }
 
 
 /*INSTRUCTION__PREPRARATION*/
-#title2 {
-  background-color: #917bfe;
-}
-#title2 > h2 {
-  color: #4422ef;
-}
 .preparation {
   margin-left: 7em;
   margin-right: 7em;
-  padding: 1em;
+  padding: 2em;
+  background-color: #413f4b;
+  border-radius: 10px;
+  transition: rotate 0.5s;
+  cursor:pointer;
 }
-.preparation__title h2 {
+.preparation:hover{
+  rotate: 3deg
+}
+
+.preparation__content p.preparation__text{
+  line-height: 1.6em;
+  color:#d0c9ec
+}
+.preparation__heading {
+  text-align: left;
+  padding-bottom: 0.5em;
+  color: #a798f4;
+  font-weight: 800;
   font-size: 3rem;
-  color: #a7a6ff;
-  text-align: center;
+  font-style: normal;
+  line-height: 3.2rem;
 }
+
+
+
+
+
+/*INSTRUCTION__GAMEPLAY*/
+.gameplay{
+  margin-left: 7em;
+  margin-right: 7em;
+  margin-top:5em;
+  margin-bottom: 5em;
+  padding: 2em;
+  background-color: #413f4b;
+  border-radius: 10px;
+  transition: rotate 0.5s;
+  cursor:pointer;
+}
+#gameplay__content{
+  background-color: #413f4b;
+  padding:0;
+  margin-left:6.5em;
+}
+.gameplay:hover{
+  rotate: -2deg
+}
+.gameplay__heading{
+  text-align: left;
+  padding-bottom: 0.5em;
+  color: #98bbf4;
+  font-weight: 800;
+  font-size: 3rem;
+  font-style: normal;
+  line-height: 3.2rem;
+}
+.gameplay__text{
+  list-style: none;
+}
+.gameplay__text>li{
+  list-style: none;
+  margin-left:-5.5em;
+  margin-bottom: 0em;
+  font-size: 1.2rem;
+  color: #cee2fe;
+  background-color: #413f4b;
+}
+.conclusion{
+  width:80%;
+  margin: 2em auto;
+  padding: 4%;
+  font-style: italic;
+}
+.conclusion .heading{
+  font-style: italic;
+}
+.gameplay__text li{
+  padding: 0.6em;
+}
+
+
 
 
 
