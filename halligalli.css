@@ -415,16 +415,16 @@ header.sticky {
   justify-content: center;
   align-items: center;
 }
-.gamecontent__description ul {
+.gamecontent__description .gamecontent__text{
   flex: 1;
   text-align: left;
   padding-right: 5em;
 }
 .gamecontent__description li {
   list-style-type: square;
-  font-size: 1.2rem;
-  padding-bottom: 1em;
-  color: #f3d0d7;
+  font-size: 1.5rem;
+  padding-bottom: 1.2em;
+  color: #fab3c1;
 }
 .gamecontent__img {
   flex: 1;
@@ -435,6 +435,8 @@ header.sticky {
   object-fit: contain;
 }
 
+
+
 /*INSTRUCTION__BRIEF INTRO*/
 .briefintro {
   width: 80%;
@@ -443,6 +445,29 @@ header.sticky {
 .briefintro > h3 {
   font-size: 1.3rem;
 }
+.briefintro__heading {
+  text-align: left;
+  padding:0.5em 0;
+}
+.briefintro .briefintro__text{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+.briefintro{
+  display:flex;
+  flex-direction: row;
+}
+.briefintro__img{
+  flex:1;
+  object-fit: contain;
+  width:36%;
+  padding-left: 2em;
+  padding-right: 1em;
+}
+.briefintroinner{
+  padding-right:0em;
+}
+
 
 /*INSTRUCTION__PREPRARATION*/
 #title2 {
@@ -461,6 +486,13 @@ header.sticky {
   color: #a7a6ff;
   text-align: center;
 }
+
+
+
+
+
+
+
 
 
 
