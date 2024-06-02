@@ -10,6 +10,7 @@ function parallax(e) {
   });
 }
 
+//set up preloader
 const preloader = document.querySelector("#preloader");
 if (preloader) {
   window.addEventListener("load", () => {
@@ -20,6 +21,8 @@ if (preloader) {
     }, 2500);
   });
 }
+//scroll animation -- not implemented
+/*
 window.addEventListener("scroll", function () {
   const header = document.getElementById("header");
   if (window.scrollY > 50) {
@@ -32,7 +35,9 @@ window.addEventListener("scroll", function () {
     }, 200);
   }
 });
+*/
 
+//sliding animation
 function handleAlert() {
   const targetElements = document.querySelectorAll(".slide-up");
   targetElements.forEach((element) => {

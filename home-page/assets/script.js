@@ -1,4 +1,4 @@
-const preloader = document.querySelector("#preloader");
+const preloader = document.querySelector("#preloader"); 
 if (preloader) {
   window.addEventListener("load", () => {
     setTimeout(() => {
@@ -48,7 +48,7 @@ function handleAlert() {
   });
 }
 function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
+  const rect = element.getBoundingClientRect(); //button and images slide in together
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
